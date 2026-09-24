@@ -36,7 +36,7 @@ int main() {
         kelvin = temp + 273.15;
         fahrenheit = (temp * 1.8) + 32;
         std::cout << temp << "C is equal to " << kelvin << "K and " << fahrenheit << "F\n"; 
-        
+
     } else {
         std::cout << "Enter A Valid Unit!";
     }
@@ -44,3 +44,20 @@ int main() {
 
     return 0;
 }
+
+/* OLD CODE
+
+    std::cout << "Enter Temperature In Celcius: ";
+    std::cin >> celcius;
+
+    fahrenheit = (celcius * 1.8) + 32;
+
+    std::cout << celcius << " degrees is equal to " << fahrenheit << " Fahrenheit" << '\n';
+
+    std::cout << "Enter Temperature In Celcius: ";
+    std::cin >> celcius;
+
+    kelvin = celcius + 273.15;
+
+    std::cout << celcius << " degrees is equal to " << kelvin << " Kelvin" << '\n';
+*/
