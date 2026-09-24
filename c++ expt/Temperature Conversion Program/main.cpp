@@ -1,21 +1,46 @@
 #include <iostream>
 
 int main() {
-    double fahrenheit, celcius, kelvin;
+    double fahrenheit, celcius, kelvin, temp;
+    char unit;
 
-    std::cout << "Enter Temperature In Celcius: ";
-    std::cin >> celcius;
+    std::cout << "========== Temperature Conversion ==========\n";
+    std::cout << "F = Fahrenheit\n";
+    std::cout << "C = Celcius\n";
+    std::cout << "K = Kelvin\n";
+    std::cout << "Which one do you want to change to: ";
+    std::cin >> unit;
 
-    fahrenheit = (celcius * 1.8) + 32;
+    // UPDATED CODE
+    if(unit == 'F' || unit == 'f'){
+        std::cout << "Enter the temperature in Fahrenheit: ";
+        std::cin >> temp;
 
-    std::cout << celcius << " degrees is equal to " << fahrenheit << " Fahrenheit" << '\n';
+        celcius = (temp - 32) / 1.8;
+        kelvin = celcius + 273.15;
+        std::cout << temp << "F is equal to " << celcius << "C and " << kelvin << "K\n"; 
 
-    std::cout << "Enter Temperature In Celcius: ";
-    std::cin >> celcius;
+    } else if (unit == 'K' || unit == 'k') {
+        std::cout << "Enter the temperature in Kelvin: ";
+        std::cin >> temp;
 
-    kelvin = celcius + 273.15;
+        celcius = temp - 273.15;
+        fahrenheit = (celcius * 1.8) + 32;
 
-    std::cout << celcius << " degrees is equal to " << kelvin << " Kelvin" << '\n';
+        std::cout << temp << "K is equal to " << celcius << "C and " << fahrenheit << "F\n"; 
+
+    }  else if (unit == 'C' || unit == 'c') {
+        std::cout << "Enter the temperature in celcius: ";
+        std::cin >> temp;
+
+        kelvin = temp + 273.15;
+        fahrenheit = (temp * 1.8) + 32;
+        std::cout << temp << "C is equal to " << kelvin << "K and " << fahrenheit << "F\n"; 
+        
+    } else {
+        std::cout << "Enter A Valid Unit!";
+    }
+    std::cout << "============================================\n";
 
     return 0;
 }
