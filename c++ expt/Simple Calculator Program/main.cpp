@@ -5,6 +5,7 @@ int main() {
     char op;
     double num1;
     double num2;
+    double num3;
     double result;
 
     std::cout << "-----------CALCULATOR-----------\n";
@@ -23,24 +24,27 @@ int main() {
     std::cout << "Enter #2: ";
     std::cin >> num2;
 
+    std::cout << "Enter #3: ";
+    std::cin >> num3;
+
     switch(op) {
         case '+':
-        result = num1 + num2;
+        result = num1 + num2 + num3;
         std::cout << "Result: " << result << '\n';
         break;
 
         case '-':
-        result = num1 - num2;
+        result = num1 - num2 - num3;
         std::cout << "Result: " << result << '\n';
         break;
 
         case '*':
-        result = num1 * num2;
+        result = num1 * num2 * num3;
         std::cout << "Result: " << result << '\n';
         break;
 
         case '/':
-        result = num1 / num2;
+        result = num1 / num2 / num3;
         std::cout << "Result: " << result << '\n';
         break;
     default:
