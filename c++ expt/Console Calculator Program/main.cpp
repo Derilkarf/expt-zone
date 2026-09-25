@@ -11,6 +11,11 @@ int main() {
 
     std::cout << "Enter either (+ - * /): ";
     std::cin >> op;
+    
+    while(op != '+' && op != '-' && op != '*' && op != '/') {
+        std::cout << "Invalid operator! Please enter only (+ - * /): ";
+        std::cin >> op;
+    }
 
     std::cout << "Enter #1: ";
     std::cin >> num1;

@@ -24,6 +24,7 @@ int main() {
     // BEST FOR: When you want the code to run AT LEAST ONCE, no matter what.
     // Even though 6 is NOT <= 5, this line will print exactly ONE TIME.
     // It runs before it even realizes the condition is false!
+    
     int number = 6; 
 
     do {
@@ -43,8 +44,9 @@ int main() {
     
 
     std::cout << "--- 3. FOR LOOP ---\n";
-    for (int index = 10; index >= 0; index--) {
-        std::cout << "Countdown: " << index << '\n';
+    
+    for (int i = 10; i >= 0; i--) {
+        std::cout << "Countdown: " << i << '\n';
     }
     std::cout << "OOOOO MY PCCCCCCCCCC!!!\n";
 
