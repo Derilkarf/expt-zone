@@ -2,11 +2,12 @@
 
 int main () {
     double topBase, bottomBase, height, width;
+    bool op = true;
 
     std::cout << "==========================\n";
     std::cout << "  Trapezium Area Program  \n";
     std::cout << "==========================\n";
-
+    
     std::cout << "Input Top Base Width: ";
     std::cin >> topBase;
 
