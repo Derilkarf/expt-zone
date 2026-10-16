@@ -9,6 +9,8 @@
 
 struct termios orig_termios;
 
+//Exit Calling Func
+//
 void die(const char *s){
   perror(s);
   exit(1);
