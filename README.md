@@ -10,17 +10,9 @@ A sandbox repository dedicated to testing code, experimenting with algorithms, a
 
 Currently, the primary focus includes:
 * **Learning The Fundamental:** Trying to understand more about how's code works and the way that's makes them makes sense.
-* **Mimicking The Same Function With Different Language:** For deeper understanding about each programming language syntax, what's the difference between them and also at the same point how their logic is connected to each other.
-
 ---
 
 ### Prerequisites
-
-* [Python 3.x](https://www.python.org/downloads/) installed on your machine.
-* [Git]
-(https://git-scm.com/) for repository management.
-* [MSYS2]
-(https://www.msys2.org/) for installing the g++ /  gcc compiler 
 
 ### Installation & Setup
 
