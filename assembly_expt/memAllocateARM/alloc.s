@@ -11,9 +11,9 @@ allocate:
   mov r5, #0
 
   mov r7, #192
-  sys #0
+  svc #0
 
-  cmp r0, -1
+  cmp r0, #-1
   beq alloc_failed 
 
   mov r1, #42
@@ -38,12 +38,15 @@ main:
   push {r0}
   ldr r1, [r0]
 
+  //Push to console
   ldr r0, =format_str
   bl printf
 
+  // Deallocate the memory
   pop {r0}
   mov r1, #4096
 
+  // mnmap syscall
   mov r7, #215
   svc #0
 
