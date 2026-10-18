@@ -30,5 +30,7 @@ Each folder is independent. Open the folder you want and run its files with the 
 
 ## Notes
 
+- Feel free to use them
 - Code here is experimental and may be incomplete, unoptimized, or broken.
 - Folders and files change often as I learn.
+- The reason i make this repo because its easier for me to navigate because i have golden fish memory
