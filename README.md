@@ -1,21 +1,34 @@
-# Experiment Zone #
+# Experiment Zone
 
-A sandbox repository dedicated to testing code, experimenting with algorithms, and any programming language i desire.
+A sandbox repository for testing code, experimenting with algorithms, and trying any programming language I'm curious about.
 
----
+## Overview
 
-## Project Overview ##
+Experiment Zone is a practical testing ground for core algorithms, small utilities, and programming logic. The main goal is learning the fundamentals: understanding how code works and why it makes sense.
 
-**Experiment Zone** serves as a practical testing ground for implementing core algorithms, script utilities, and programming logic. 
+## Repository Structure
 
-Currently, the primary focus includes:
-* **Learning The Fundamental:** Trying to understand more about how's code works and the way that's makes them makes sense.
----
+| Folder | Contents |
+| --- | --- |
+| `assembly_expt/` | Assembly experiments |
+| `c_expt/` | C experiments |
+| `c++_expt/` | C++ experiments |
+| `python expt/` | Python experiments |
+| `html & css expt/` | HTML and CSS experiments |
+| `Prompt/` | Prompt files |
 
-### Prerequisites
+## Getting Started
 
-### Installation & Setup
+Clone the repository:
 
-1. **Clone the repository:**
-   ```bash
-   git clone [https://github.com/Derilkarf/expt-zone.git](https://github.com/Derilkarf/expt-zone.git)
+```bash
+git clone https://github.com/Derilkarf/expt-zone.git
+cd expt-zone
+```
+
+Each folder is independent. Open the folder you want and run its files with the matching toolchain (assembler, `gcc`/`g++`, `python`, or a browser).
+
+## Notes
+
+- Code here is experimental and may be incomplete, unoptimized, or broken.
+- Folders and files change often as I learn.
